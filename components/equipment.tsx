@@ -7,11 +7,14 @@ const equipmentItems = [
   "Kurzhanteln 1\u201347,5 kg",
   "Athletik-Equipment",
   "Profi-Langhantelstangen",
-]
+];
 
 export function Equipment() {
   return (
-    <section id="equipment" className="bg-secondary py-24 md:py-32 overflow-hidden">
+    <section
+      id="equipment"
+      className="bg-secondary py-24 md:py-32 overflow-hidden"
+    >
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text side */}
@@ -22,10 +25,12 @@ export function Equipment() {
             <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-foreground leading-[0.95] mb-8 text-balance">
               Kein Schnickschnack.
               <br />
-              <span className="text-muted-foreground">Nur das Echte.</span>
+              <span className="">Nur das Echte.</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">
-              {"Praxiserprobt. Oldschool. Equipment f\u00fcr hartes, schweres Training. Ausgew\u00e4hlt f\u00fcr ernsthafte Athleten, die wissen, was funktioniert."}
+            <p className="leading-relaxed mb-10 max-w-lg">
+              {
+                "Praxiserprobt. Oldschool. Equipment f\u00fcr hartes, schweres Training. Ausgew\u00e4hlt f\u00fcr ernsthafte Athleten, die wissen, was funktioniert."
+              }
             </p>
 
             {/* Equipment list */}
@@ -71,5 +76,5 @@ export function Equipment() {
         </div>
       </div>
     </section>
-  )
+  );
 }
